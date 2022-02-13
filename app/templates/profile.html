@@ -1,0 +1,48 @@
+
+ {% extends "base.html" %}
+
+ {% block css %}
+ <link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}"
+{% endblock %}
+
+
+{% block main %}
+ <div class="content-area">
+    <section id="head-section">
+        <img src = "{{url_for('static', filename='MyImage.jpeg')}}" class ="Image1">
+            <div id="header-info">
+            <h1>Chadric Nathan</h1>
+            <p>@Yanceko</p>
+            <p>Kingston,Jamaica</p>
+            <p>Joined {{join_date}}</p>
+        </div>
+    </section>
+    <section id="body-section">
+        <article>
+            <p>I major in computer science and currently at the age of 20. 
+                I chose to major in computer science because I have a interest in software and programming. 
+                Web Development piques my interest as creating webpages for websites with various scripting styles seems intriguing.
+            </p>
+            <section id="comments">
+                <div>
+                    <p><strong>10</strong></p>
+                    <p>Posts</p>
+                </div>
+                <div>
+                    <p><strong>100</strong></p>
+                    <p>Following</p>
+                </div>
+                <div>
+                    <p><strong>250</strong></p>
+                    <p>Followers</p>
+                </div>
+
+                <button>Follow</button>
+
+            </section>
+            
+        </article>
+    </section>
+</div>
+
+{% endblock %}
